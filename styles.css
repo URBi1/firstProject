@@ -34,6 +34,12 @@ body {
     position: relative;
 }
 
+.menu .menu-item-with-dropdown li{
+    position: relative;
+    padding-top: 10px;
+}
+
+
 .menu .menu-item-with-dropdown:hover .dropdown {
     display: block;
 }
@@ -135,4 +141,21 @@ body {
 .text-image-container{
     display: grid;
     grid-template-columns: auto 1fr;
+    align-items: center;
 }
+
+.subtitle {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .text {
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .block-text{
+    margin-left: 20px;
+  }
