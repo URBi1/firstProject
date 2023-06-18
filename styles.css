@@ -159,3 +159,22 @@ body {
   .block-text{
     margin-left: 20px;
   }
+
+  .partners{
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+
+  .logos {
+    display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px 20px;
+  justify-content: center; 
+
+  }
+
+  .logo-img {
+    height: 40px;
+    width: auto;
+  }
