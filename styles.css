@@ -1,0 +1,138 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.menu .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.menu .menu-item {
+    padding: 5px;
+    white-space: nowrap;
+    list-style: none;
+    position: relative;
+    margin-right: 30px;
+}
+
+.menu .menu-item .dropdown {
+    z-index: 10;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    list-style: none;
+    background-color: white;
+    padding: 5px 10px 10px 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+}
+
+
+.menu .menu-item-with-dropdown {
+    position: relative;
+}
+
+.menu .menu-item-with-dropdown:hover .dropdown {
+    display: block;
+}
+
+
+.menu a{
+    text-decoration: none; 
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 150, 170);
+}
+
+.menu .menu-item:hover .dropdown {
+    display: block;
+}
+
+.menu .menu-item img {
+    display: inline-block;
+}
+
+.menu .menu-item .dropdown li:hover{
+    background-color: #fff1f4;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo . menu";
+    align-items: first baseline;
+    margin: 30px 10px;
+}
+
+.logo{
+    grid-area: logo;
+}
+
+.menu{
+    grid-area: menu;
+}
+
+.pink-and-white {
+    margin: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    padding: 0 3em; /* Добавляем поля справа и слева */
+  }
+  
+  .container.left {
+    background-color: white;
+    padding: 20px;
+  }
+
+  .container.left h1{
+    font-size: 4em;
+    font-weight: bold;
+  }
+  
+  .container.left p{
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  .container.right {
+    background-color: pink; 
+    padding: 20px;
+    text-align: center;
+  }
+
+  .container.right p{
+    font-size: 22px;
+    font-weight: 400;
+  }
+  
+  .button{
+    background-color: #ff96aa;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 30px; 
+    border: none;
+    cursor: pointer;
+    text-decoration: none; 
+    display:inline-block;
+}
+
+.circle-img img{
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    position: relative; 
+    
+}
+
+.text-image-container{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
