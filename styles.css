@@ -85,7 +85,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
-    padding: 0 3em; /* Добавляем поля справа и слева */
+    padding: 0 3em; 
   }
   
   .container.left {
@@ -169,9 +169,9 @@ body {
 
   .logos {
     display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-gap: 10px 20px;
-  justify-content: center; 
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px 20px;
+    justify-content: center; 
 
   }
 
@@ -188,3 +188,125 @@ body {
    background-color: #102441;
 
   }
+
+  .icon {
+    stroke: pink; 
+    stroke-width: 2px; 
+    width: 100px;
+    height:100px;
+  }
+
+
+.container-with-cards{
+    text-align: center;
+    background-color: lightgrey;
+    padding-bottom: 90px;
+    padding-top: 80px;
+}
+
+.container-with-cards h2{
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.container-with-cards h3{
+    font-size: 30px;
+    font-weight: 700px;
+    color: #ff96aa;
+}
+
+
+
+  .with-cards{
+    display: grid;
+    gap: 20px;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 50px;
+  }
+
+  .card {
+    text-align: center;
+    padding: 1em;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .card h4{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px;
+  }
+
+  .card h5{
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  .card p{
+    margin: 40px;
+  }
+
+.buttons{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+
+  .button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  
+  .button-1 {
+    background-color: red;
+    color: white;
+  }
+  
+  .button-2 {
+    background-color: blue;
+    color: white;
+  }
+  
+  .button-3 {
+    background-color: green;
+    color: white;
+  }
+  
+  .button-4 {
+    background-color: orange;
+    color: white;
+  }
+
+  .roadmap{
+    display: grid;
+    grid-template-columns: auto 1fr 400px;
+    grid-gap: 10px;
+    justify-content: left;
+    background-color: rgb(255, 247, 249);
+    padding-top: 50px;
+  }
+
+  .roadmap-text{
+   margin-right : 50px;
+  }
+
+  .call-to-action h3{
+    font-size: 50px;
+    font-weight: 700;
+  }
+  
+  .call-to-action h1{
+    font-size: 90px;
+    font-weight: 700;
+    color: rgb(255, 150, 170);
+  }
+
